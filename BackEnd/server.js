@@ -10,9 +10,9 @@ const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
 // Serve the static files from the React app
-const path = require('path');
-app.use(express.static(path.join(__dirname, '../build')));
-app.use('/static', express.static(path.join(__dirname, 'build//static')));
+// const path = require('path');
+// app.use(express.static(path.join(__dirname, '../build')));
+// app.use('/static', express.static(path.join(__dirname, 'build//static')));
 
 //connecting async
 async function main() {
@@ -101,9 +101,9 @@ app.delete('/api/pet/:id', (req, res) => {
 
 
 // Handles any requests that don't match the ones above
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../build/index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname + '/../build/index.html'));
+// });
 
 //the server is going to listen for a request for url on the port 3000
 app.listen(port, () => {

@@ -57,7 +57,7 @@ export class Create extends React.Component {
                 <h3>Hello from Create Component!</h3>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label>Add Animal: </label>
+                        <label>Add Animal Notes: </label>
                         <input type="text"
                             className="form-control"
                             value={this.state.animal}
