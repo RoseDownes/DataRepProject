@@ -45,7 +45,7 @@ export class Animals extends React.Component {
     render() {
         return (
             <div>
-                <h3>Hello from my Animal component!</h3>
+                <h3>Hello here are my Animals </h3>
                 <Pets pets={this.state.pets} ReloadData={this.ReloadData}></Pets>
             </div>
         );
