@@ -17,6 +17,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import { DogFacts } from './components/dogfacts';
+import { DogData } from './components/dogdata';
 
 class App extends React.Component {
   render() {
@@ -30,14 +32,14 @@ class App extends React.Component {
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/animals">Animals</Nav.Link>
                 <Nav.Link href="/register">Register</Nav.Link>
-                <NavDropdown title="Photos" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="/photos">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
+                <NavDropdown title="Extras" id="collasible-nav-dropdown">
+                  <NavDropdown.Item href="/dogdata">Random Dog</NavDropdown.Item>
+                  <NavDropdown.Item href="/dogfacts">
+                    Random Fact!
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-  
+
             </Container>
           </Navbar>
           <Header></Header>
@@ -46,6 +48,8 @@ class App extends React.Component {
             <Route path='/animals' element={<Animals></Animals>}></Route>
             <Route path='/register' element={<Create></Create>}></Route>
             <Route path='/edit/:id' element={<Edit></Edit>}></Route>
+            <Route path='/dogfacts' element={<DogFacts></DogFacts>}></Route>
+            <Route path='/dogdata' element={<DogData></DogData>}></Route>
           </Routes>
 
 

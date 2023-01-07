@@ -54,7 +54,7 @@ export class Create extends React.Component {
     render() {
         return (
             <div>
-                <h3>Hello from Create Component!</h3>
+                <h3>Register An Animal!</h3>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label>Add Animal Notes: </label>
